@@ -2,8 +2,12 @@ doctype html
 html
   head
     title='Tug Market'
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap")
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css' integrity='sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==' crossorigin='anonymous' referrerpolicy='no-referrer')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/toggle_switch.css')
+    link(rel="stylesheet", href="/stylesheets/ads_card.css")
   body
+    include partials/primary_header.pug
     block content
     script(src='https://unpkg.com/htmx.org@2.0.3', integrity='sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq', crossorigin='anonymous')

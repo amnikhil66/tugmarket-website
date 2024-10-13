@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  main 
+    section(id="primary_content")
+      include partials/primary_content_title.pug
+      include partials/analytics_panel.pug
+      include partials/vote_panel.pug
+    section(id="secondary_content")
+      include partials/ads_container.pug

@@ -1,0 +1,53 @@
+section(id="analytics-panel")
+    section(id="analytics-container")
+        header
+            h4(class="fatface") Analytics
+        section(id="stats-container")
+            div(class="stats your-stats")
+                p(class="numbers text-bold") 42
+                p Your Moves
+            div(class="stats")
+                p(class="numbers text-bold") 400
+                p Total Moves
+            div(class="stats")
+                p(class="numbers text-bold") 250
+                p Unique Players
+            div(class="stats")
+                p(class="numbers text-bold") 250
+                p Repeat Players
+            div(class="stats countdown-timer")
+                p(class="numbers text-bold") 40m:20s
+                p Time Left
+        section(id="stats-indicator-container")
+            div(class="stats-indicator")
+                div(class="indicator first-half")
+                    p(class="text-inverted text-bold") 50%
+                div(class="indicator second-half")
+                    p(class="text-inverted text-bold") 50%
+            div(class="stats-labels")
+                div(class="label-container first-half")
+                    img(src="images/dem.svg", alt="Democratic Party Emblem")
+                    p(class="text-bold") &nbsp;&nbsp;Kamala
+                div(class="label-container")
+                    p Probability %
+                div(class="label-container second-half")
+                    p(class="text-bold") Trump&nbsp;&nbsp;
+                    img(src="images/gop.svg", alt="Republican Party Emblem")
+    section(id="how-to-play")
+        header
+            h4(class="fatface") How to play
+        ul(class="instructions")
+            li(class="text-bold")
+                span Game starts at 50% on each side.
+            li(class="text-bold")
+                span If you support&nbsp;
+                    span Blue
+                    span , move the
+                    span &nbsp;Red&nbsp;
+                    span toggles to blue.
+            li(class="text-bold")
+                span If you support&nbsp;
+                    span Red
+                    span , move the
+                    span &nbsp;Blue&nbsp;
+                    span toggles to red.

@@ -1,0 +1,18 @@
+section(id="vote_panel")
+    section(id="total_vote_tally")
+        div(class="vote-tally-container")
+            div(class="vote-indicator-container left")
+                div(class="vote-indicator")
+                p(class="text-bold") Blue: 500
+            div(class="vote-indicator-container")
+                p Total: 1000
+            div(class="vote-indicator-container right")
+                div(class="vote-indicator")
+                p(class="text-bold") Red: 500
+    ul(id="voter_panel")
+            - var label = 1;
+            while label <= 1000
+                li(class="voter-control-container")
+                    - var isUnChecked = label % 2 === 0;
+                    include ../components/toggle_switch.pug
+                    - label++

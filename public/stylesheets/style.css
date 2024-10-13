@@ -1,8 +1,246 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 40px 60px;
+  font: 16px "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #000;
+  background-color: #FFFBC1;
 }
 
-a {
-  color: #00B7FF;
+#primary_header {
+  padding: 0 0 0.375rem 0;
+  border-bottom: 0.0625rem #000 dashed;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem 0;
+}
+
+#primary_content {
+  flex-grow: 0.6;
+  margin: 0 5rem 0 0;
+}
+
+/* Typography */
+.text-light {
+  font-weight: 300;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-inverted {
+  color: #FFF;
+}
+
+.fatface {
+  font-family: "Abril Fatface", "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.title {
+  font: 1.875rem;
+}
+
+/* Sections */
+#primary_content_title {
+  padding: 0 0 0.625rem 0;
+  border-bottom: 0.0625rem #000 solid;
+  margin: 0 0 1.25rem 0;
+}
+
+#primary_content_title p {
+  margin: 0;
+}
+
+#primary_content_title h2 {
+  margin: 0 0 1.25rem 0;
+}
+
+#analytics-panel {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #000;
+  padding: 0 0 1rem 0;
+}
+
+#analytics-container {
+  flex-grow: 0.55;
+}
+
+#stats-container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+#stats-container .stats {
+  padding: 0.5rem 0.625rem;
+  background-color: #F2EEB5;
+  flex-grow: 1;
+}
+
+#stats-container .stats p {
+  margin: 0;
+}
+
+#stats-container .stats .numbers {
+  font-size: 1.875rem;
+}
+
+#stats-container .stats:first-child {
+  background-color: #DAD7A2;
+  border-radius: 8px 0 0 8px;
+}
+
+#stats-container .stats.countdown-timer {
+  background-color: #FFD3AA;
+  border-radius: 0 8px 8px 0;
+  margin: 0 0 0 0.25rem;
+}
+
+#stats-indicator-container {
+  margin: 1.25rem 0 0 0;
+}
+
+#stats-indicator-container .stats-indicator {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+
+#stats-indicator-container .stats-indicator .indicator {
+  flex-grow: 1;
+}
+
+#stats-indicator-container .stats-indicator .indicator.first-half {
+  background-color: #0044C9;
+  border-radius: 8px 0 0 8px;
+  margin: 0 0.125rem 0 0;
+}
+
+#stats-indicator-container .stats-indicator .indicator.second-half {
+  justify-self: end;
+  background-color: #E81A23;
+  border-radius: 0 8px 8px 0;
+  margin: 0 0 0 0.125rem;
+}
+
+#stats-indicator-container .stats-indicator .indicator p {
+  margin: 0.5rem;
+}
+
+#stats-indicator-container .stats-labels {
+  display: flex;
+  flex-direction: row;
+  margin: 0.625rem 0 0 0;
+}
+
+#stats-indicator-container .stats-labels .label-container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+#stats-indicator-container .stats-labels .label-container img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+#stats-indicator-container .stats-labels .label-container p {
+  padding: 0;
+  margin: 0;
+}
+
+#stats-indicator-container .stats-labels .label-container {
+  justify-content: center;
+}
+
+#stats-indicator-container .stats-labels .label-container.first-half {
+  justify-content: flex-start;
+}
+
+#stats-indicator-container .stats-labels .label-container.second-half {
+  justify-content: flex-end;
+}
+
+#how-to-play {
+  margin: 0 0 0 1.25rem;
+}
+
+#how-to-play .instructions {
+  list-style-position: inside;
+  background-color: #F2EEB5;
+  padding: 0.75rem 4rem 0.75rem 0.75rem;
+  border-radius: 4px;
+  margin: 0.5rem 0 0 0;
+}
+
+#how-to-play .instructions li {
+  margin: 0.125rem 0;
+}
+
+#vote_panel {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0 0 0;
+}
+
+#total_vote_tally {
+  display: flex;
+  flex: 1;
+}
+
+#total_vote_tally .vote-tally-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#total_vote_tally .vote-tally-container .vote-indicator-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#total_vote_tally .vote-tally-container .vote-indicator-container .vote-indicator {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin: 0 0.625rem 0 0;
+}
+
+#total_vote_tally .vote-tally-container .vote-indicator-container p {
+  margin: 0;
+}
+
+#total_vote_tally .vote-tally-container .vote-indicator-container.left .vote-indicator {
+  background-color: #0044C9;
+}
+
+#total_vote_tally .vote-tally-container .vote-indicator-container.left p {
+  color: #0044C9;
+}
+
+#total_vote_tally .vote-tally-container .vote-indicator-container.right .vote-indicator {
+  background-color: #E81A23;
+}
+
+#total_vote_tally .vote-tally-container .vote-indicator-container.right p {
+  color: #E81A23;
+}
+
+#voter_panel {
+  list-style: none;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 1rem auto;
+}
+
+#voter_panel .voter-control-container {
+  padding: 0.25rem;
 }
